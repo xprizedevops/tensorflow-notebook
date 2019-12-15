@@ -1,0 +1,21 @@
+{
+    "kernel_python_credentials" : {
+      "username": "{USERNAME}",
+      "base64_password": "{BASE64ENCODEDPASSWORD}",
+      "url": "https://{CLUSTERDNSNAME}/livy"
+    },
+  
+    "kernel_scala_credentials" : {
+      "username": "{USERNAME}",
+      "base64_password": "{BASE64ENCODEDPASSWORD}",
+      "url": "https://{CLUSTERDNSNAME}/livy"
+    },
+  
+    "custom_headers" : {
+      "X-Requested-By": "livy"
+    },
+
+    "heartbeat_refresh_seconds": 5,
+    "livy_server_heartbeat_timeout_seconds": 60,
+    "heartbeat_retry_seconds": 1
+}

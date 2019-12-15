@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Pass in the Azure HDInsight Cluster credentials
+sed -i "s/{USERNAME}/${USERNAME}/g" ~/.sparkmagic/config.json
+sed -i "s/{BASE64ENCODEDPASSWORD}/${BASE64ENCODEDPASSWORD}/g" ~/.sparkmagic/config.json
+sed -i "s/{CLUSTERDNSNAME}/${CLUSTERDNSNAME}/g" ~/.sparkmagic/config.json
+
+start-notebook.sh
